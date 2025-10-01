@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Product preview card](https://www.frontendmentor.io/solutions/mobile-first-flexible-product-preview-0n7_tym_Yd)
+- Live Site URL: [Product preview card](https://ahmed-osama99.github.io/Product-Preview-Card/)
 
 ## My process
 
