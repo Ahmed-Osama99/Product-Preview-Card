@@ -1,0 +1,135 @@
+:root {
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+  --h-font-family: "Fraunces", serif;
+}
+html {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: clamp(1.125rem, 1.5vw + 0.75rem, 1.25rem);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--Cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--h-font-family);
+  color: var(--Black);
+}
+.container {
+  background-color: var(--White);
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.content {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75em, 2vw, 1em);
+}
+.category {
+  color: var(--Grey);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.75rem;
+}
+.title {
+  line-height: 1;
+}
+.description {
+  color: var(--Grey);
+  line-height: 1.5;
+  font-size: 0.75rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.price .actual {
+  color: var(--Green-500);
+  margin-inline-end: 0.5em;
+}
+.price .discount {
+  color: var(--Grey);
+  text-decoration: line-through;
+  font-size: 0.75rem;
+}
+button.add-to-cart {
+  width: 100%;
+  background-color: var(--Green-500);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 10px;
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.add-to-cart i {
+  margin-inline-end: 0.75em;
+}
+.add-to-cart:hover {
+  background-color: var(--Green-700);
+}
+.attribution {
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--Grey);
+}
+.attribution a {
+  color: var(--Green-500);
+  text-decoration: none;
+}
+@media (min-width: 786px) {
+  .container {
+    flex-direction: row;
+    max-width: clamp(680px, 50vw, 700px);
+  }
+  picture,
+  .content {
+    flex: 1;
+  }
+  .description{
+    max-width: 25ch;
+  }
+}
